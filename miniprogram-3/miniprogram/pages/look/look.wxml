@@ -1,0 +1,32 @@
+<!--pages/look/look.wxml-->
+
+
+<view class="music-player" >
+    <slider class="slider-bar" disabled="true" block-size="24" value="{{sliderTime}}" bindchange="slider0Change"></slider>
+    <view class="music">
+      <view class="current time">{{audioCurrent}}</view>
+      <view class="duration time">{{audioDuration}}</view>
+    </view>
+    <view class="ctrl">
+      <button wx:if='{{!isPlaying}}' bindtap="play">播放</button>
+      <button wx:if='{{isPlaying}}' bindtap="pause">暂停</button>
+    </view>
+    <button class='self' plain="true" bindtap="chooseUser" wx:if="{{!openid}}">选择用户</button>
+    <view class='mood' wx:if="{{openid}}">
+      <view class='sliderBlock'>
+        <view class="text">
+          <view>无共鸣</view>
+          <view>有共鸣</view>
+        </view>
+        <slider class="slider-bar" block-size="18" value="{{resonance}}" disabled="true"></slider>
+      </view>
+      <view class='sliderBlock'>
+        <view class="text">
+          <view>深情</view>
+          <view>平静</view>
+          <view>动感</view>
+        </view>
+        <slider class="slider-bar" block-size="18" value="{{feeling}}" disabled="true"></slider>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,15 @@
+/* pages/music/music.wxss */
+.tip{
+  padding: 20px;
+  font-size: medium;
+  color: rgb(153, 153, 153);
+}
+.tip1{
+  text-align: center;
+  font-size: small;
+  color: rgb(153, 153, 153);
+}
+.page{
+  display: flex;
+  flex-direction: column;
+}

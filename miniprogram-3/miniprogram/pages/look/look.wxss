@@ -1,0 +1,23 @@
+/* pages/look/look.wxss */
+
+.ctrl{
+  display: flex;
+  flex-direction: row;
+}
+.music,.text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.sliderBlock{
+  margin: 30px;
+  padding: 30px;
+}
+.music-player{
+  margin-top: 30px;
+}
+.self{
+  margin-top:200px ;
+  font-weight: 300;
+}

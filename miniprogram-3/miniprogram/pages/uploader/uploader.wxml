@@ -1,0 +1,7 @@
+<!--pages/uploader/uploader.wxml-->
+<view class="all">
+  <button class="btn" plain="true" bindtap="getMusic1">测试用音乐1</button>
+  <button class="btn" plain="true" bindtap="getMusic2">测试用音乐2</button>
+  <text class="tip">暂时没有找到上传手机存储中音频文件的接口，用已上传至云存储中的两个测试音乐演示功能。</text>
+</view>
+

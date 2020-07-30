@@ -1,0 +1,14 @@
+/* pages/uploader/uploader.wxss */
+.tip{
+  padding: 20px;
+  font-size: medium;
+  color: rgb(153, 153, 153);
+}
+.btn{
+  margin: 20px;
+}
+.all{
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+}

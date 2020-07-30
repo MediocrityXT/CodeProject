@@ -1,0 +1,19 @@
+<!--pages/music/music.wxml-->
+<view class='page'>
+  <view class="weui-cell weui-cell_input">
+      <input class="weui-input" placeholder="请输入音乐名称" bindinput="inputName"></input>
+  </view>
+  <button bindtap="search">搜索</button>
+  <text class="tip1">QQ音乐API提供支持</text>
+</view>
+<text class="tip" wx:if="{{src}}">由于QQ音乐API只能提供m4a音频文件，innerAudioContext不支持播放，请返回主页自己上传mp3音乐文件</text>
+<view class="page__hd">
+  <view class="page__title title"></view>
+</view>
+<view class="page__bd">
+  <view class="weui-cells">
+    <view class="weui-cell" wx:for='{{songlist}}' wx:for-item='item'>
+        <view class="weui-cell__bd" bindtap="chooseMusic" data-mid="{{item.songmid}}">{{item.songname}}——{{item.singer[0].name}}</view>
+    </view>
+  </view>
+</view>
