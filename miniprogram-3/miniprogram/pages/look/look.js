@@ -47,7 +47,6 @@ Page({
     .catch(err=>{
       console.log(err)
     })
-    
   },
   chooseUser:function(){
       this.getOpenId()
